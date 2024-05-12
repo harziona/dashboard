@@ -1,0 +1,26 @@
+.container {
+    display: flex; /* Use Flexbox */
+    
+}
+
+.box {
+    flex: 1; /* Equal flex-grow for all boxes */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        /* Untuk layar mobile maka objek akan tersusun seceara vertikal */
+        flex-direction: column; 
+    }
+
+    .box{
+        flex: 1;
+        background-color: aqua;
+    }
+}

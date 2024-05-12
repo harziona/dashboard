@@ -1,0 +1,52 @@
+    
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: chartreuse;
+            height: 100%;
+        }       
+        
+        .container {
+            display: flex;
+            flex: 1;
+            height: 100%;
+            
+        }
+            
+        .sidebar {
+            flex: 0 0 200px; 
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .maincontent {
+            flex: 1;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .navbar, .footer {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+        }
+       
+
+        .footer {
+            
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack items vertically on small screens */
+            }
+        }
